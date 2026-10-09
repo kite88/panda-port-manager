@@ -1,0 +1,40 @@
+invoked new=192 old=96 top=58 refresh=80x45 kill=135x47 filterPanel=312x45 fontPt=10 fontPx=34 win=1080x640 client=1054 t=21:41:42.959
+done    new=192 top=116 refresh=160x45 kill=200x47 filterPanel=484x54 fontPt=10 fontPx=34 win=2160x1280 client=2134 t=21:41:43.450
+invoked new=96 old=192 top=116 refresh=160x45 kill=200x47 filterPanel=484x54 fontPt=5 fontPx=17 win=2160x1280 client=2144 t=21:41:46.032
+done    new=96 top=58 refresh=160x45 kill=200x47 filterPanel=242x45 fontPt=10 fontPx=34 win=1080x640 client=1064 t=21:41:46.310
+invoked new=192 old=96 top=58 refresh=80x45 kill=135x47 filterPanel=312x45 fontPt=10 fontPx=34 win=1080x640 client=1054 t=21:43:16.114
+done    new=192 top=116 refresh=160x45 kill=200x47 filterPanel=484x54 fontPt=10 fontPx=34 win=2160x1280 client=2134 t=21:43:16.587
+invoked new=96 old=192 top=116 refresh=160x45 kill=200x47 filterPanel=484x54 fontPt=5 fontPx=17 win=2160x1280 client=2144 t=21:43:19.167
+done    new=96 top=58 refresh=160x45 kill=200x47 filterPanel=242x45 fontPt=10 fontPx=34 win=1080x640 client=1064 t=21:43:19.443
+invoked new=192 old=96 top=58 refresh=80x45 kill=135x47 filterPanel=312x45 fontPt=10 fontPx=34 win=1080x640 client=1054 t=21:44:50.521
+done    new=192 top=116 refresh=160x45 kill=200x47 filterPanel=484x88 fontPt=20 fontPx=68 win=2160x1280 client=2134 t=21:44:51.013
+invoked new=96 old=192 top=116 refresh=160x45 kill=200x47 filterPanel=484x88 fontPt=10 fontPx=34 win=2160x1280 client=2144 t=21:44:53.577
+done    new=96 top=58 refresh=160x45 kill=200x47 filterPanel=242x45 fontPt=10 fontPx=34 win=1080x640 client=1064 t=21:44:53.849
+invoked new=192 old=96 top=58 refresh=80x45 kill=135x47 filterPanel=312x45 fontPt=10 fontPx=34 win=1080x640 client=1054 t=21:46:06.068
+done    new=192 top=116 refresh=160x45 kill=200x47 filterPanel=484x54 fontPt=10 fontPx=34 win=2160x1280 client=2134 t=21:46:06.538
+invoked new=96 old=192 top=116 refresh=160x45 kill=200x47 filterPanel=484x54 fontPt=5 fontPx=17 win=2160x1280 client=2144 t=21:46:09.136
+done    new=96 top=58 refresh=160x45 kill=200x47 filterPanel=242x45 fontPt=10 fontPx=34 win=1080x640 client=1064 t=21:46:09.411
+invoked new=192 old=96 top=58 refresh=80x23 kill=100x23 filterPanel=347x27 fontPt=10 fontPx=34 win=1080x640 client=1054 t=21:48:34.776
+done    new=192 top=116 refresh=160x46 kill=200x46 filterPanel=484x54 fontPt=10 fontPx=34 win=2160x1280 client=2134 t=21:48:35.272
+invoked new=96 old=192 top=116 refresh=160x46 kill=200x46 filterPanel=484x54 fontPt=5 fontPx=17 win=2160x1280 client=2144 t=21:48:37.839
+done    new=96 top=58 refresh=80x23 kill=100x23 filterPanel=242x44 fontPt=10 fontPx=34 win=1080x640 client=1064 t=21:48:38.124
+invoked new=192 old=96 top=58 refresh=80x23 kill=100x23 filterPanel=347x27 fontPt=10 fontPx=34 win=1080x640 client=1054 t=21:51:20.650
+done    new=192 top=116 refresh=160x24 kill=200x24 filterPanel=484x54 fontPt=10 fontPx=34 win=2160x1280 client=2134 t=21:51:21.116
+invoked new=96 old=192 top=116 refresh=160x24 kill=200x24 filterPanel=484x54 fontPt=5 fontPx=17 win=2160x1280 client=2144 t=21:51:23.710
+done    new=96 top=58 refresh=80x12 kill=100x12 filterPanel=242x44 fontPt=10 fontPx=34 win=1080x640 client=1064 t=21:51:23.981
+invoked new=192 old=96 top=58 refresh=80x23 kill=100x23 filterPanel=347x27 fontPt=10 fontPx=34 win=1080x640 client=1054 t=21:52:04.002
+done    new=192 top=116 refresh=160x46 kill=200x46 filterPanel=484x46 fontPt=5 fontPx=17 win=2160x1280 client=2134 t=21:52:04.471
+invoked new=96 old=192 top=116 refresh=160x46 kill=200x46 filterPanel=484x46 fontPt=2.5 fontPx=9 win=2160x1280 client=2144 t=21:52:07.076
+done    new=96 top=58 refresh=80x23 kill=100x23 filterPanel=242x27 fontPt=5 fontPx=17 win=1080x640 client=1064 t=21:52:07.349
+invoked new=192 old=96 top=58 refresh=80x23 kill=100x23 filterPanel=347x27 fontPt=5 fontPx=17 win=1080x640 client=1054 t=21:53:41.171
+done    new=192 top=116 refresh=160x46 kill=200x46 filterPanel=484x46 fontPt=5 fontPx=17 win=2160x1280 client=2134 t=21:53:41.625
+invoked new=96 old=192 top=116 refresh=160x46 kill=200x46 filterPanel=484x46 fontPt=5 fontPx=17 win=2160x1280 client=2144 t=21:53:44.231
+done    new=96 top=58 refresh=80x23 kill=100x23 filterPanel=242x27 fontPt=5 fontPx=17 win=1080x640 client=1064 t=21:53:44.503
+invoked new=192 old=96 top=58 refresh=80x23 kill=100x23 filterPanel=347x27 fontPt=5 fontPx=17 win=1080x640 client=1054 t=21:55:19.661
+done    new=192 top=116 refresh=160x46 kill=200x46 filterPanel=484x46 fontPt=5 fontPx=17 win=2160x1280 client=2134 t=21:55:20.129
+invoked new=96 old=192 top=116 refresh=160x46 kill=200x46 filterPanel=484x46 fontPt=5 fontPx=17 win=2160x1280 client=2144 t=21:55:22.719
+done    new=96 top=58 refresh=80x23 kill=100x23 filterPanel=242x27 fontPt=5 fontPx=17 win=1080x640 client=1064 t=21:55:22.992
+invoked new=192 old=96 top=58 refresh=80x23 kill=100x23 filterPanel=347x27 fontPt=5 fontPx=17 win=1080x640 client=1054 t=22:26:51.015
+done    new=192 top=116 refresh=160x60 kill=200x60 filterPanel=484x60 fontPt=5 fontPx=17 win=2160x1280 client=2134 t=22:26:51.487
+invoked new=96 old=192 top=116 refresh=160x60 kill=200x60 filterPanel=484x60 fontPt=5 fontPx=17 win=2160x1280 client=2144 t=22:26:54.086
+done    new=96 top=58 refresh=80x30 kill=100x30 filterPanel=242x30 fontPt=5 fontPx=17 win=1080x640 client=1064 t=22:26:54.355
