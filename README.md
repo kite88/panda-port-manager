@@ -2,7 +2,7 @@
 
 # Panda Port Manager · Windows 端口占用管理工具
 
-[![Release](https://img.shields.io/github/v/release/kite88/panda-port-manager)](https://github.com/kite88/panda-port-manager/releases/latest)
+[![Release](https://img.shields.io/github/v/release/kite88/panda-port-manager?style=flat)](https://github.com/kite88/panda-port-manager/releases/latest)
 [![License](https://img.shields.io/github/license/kite88/panda-port-manager?cacheSeconds=600)](LICENSE)
 
 一个 Windows 桌面小工具（WinForms / .NET 10），把「谁占了这个端口」这件事变成一眼可见：列出全部
