@@ -2,7 +2,7 @@
 
 # Panda Port Manager · Windows Port Manager
 
-[![Release](https://img.shields.io/github/v/release/kite88/panda-port-manager)](https://github.com/kite88/panda-port-manager/releases/latest)
+[![Release](https://img.shields.io/github/v/release/kite88/panda-port-manager?style=flat)](https://github.com/kite88/panda-port-manager/releases/latest)
 [![License](https://img.shields.io/github/license/kite88/panda-port-manager?cacheSeconds=600)](LICENSE)
 
 A small Windows desktop tool (WinForms / .NET 10) that makes "who is using this port?"
