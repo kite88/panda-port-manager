@@ -1,0 +1,78 @@
+name: release
+
+# 推送 v* 标签时自动构建并创建 GitHub Release：
+#
+#   git tag v1.0.0 && git push origin v1.0.0
+#
+# 带后缀的标签（如 v1.0.1-rc1）会被标记为 prerelease，不会占用 Latest。
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write # gh release create 需要写权限
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 安装 .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: 编译检查
+        run: dotnet build PandaPortManager -c Release
+
+      - name: 发布三架构单文件 exe
+        shell: pwsh
+        run: |
+          $ver = "$env:GITHUB_REF_NAME" -replace '^v', ''
+          $rids = @('win-x64', 'win-x86', 'win-arm64')
+          foreach ($rid in $rids) {
+            Write-Host "==> publish $rid"
+            dotnet publish PandaPortManager -c Release -r $rid `
+              -p:PublishSingleFile=true -p:SelfContained=false `
+              -p:IncludeNativeLibrariesForSelfExtract=true -o "dist/$rid"
+            # 直接压缩 exe（扁平结构，zip 内无顶层文件夹），版本号已体现在 zip 文件名中
+            Compress-Archive -Path "dist/$rid/PandaPortManager.exe" -DestinationPath "dist/PandaPortManager-$rid-$ver.zip" -Force
+            Remove-Item "dist/$rid" -Recurse -Force
+          }
+
+      - name: 生成 SHA256 校验和
+        shell: pwsh
+        run: |
+          $lines = @()
+          foreach ($f in Get-ChildItem dist\PandaPortManager-*.zip) {
+            $h = Get-FileHash $f.FullName -Algorithm SHA256
+            $lines += "$($h.Hash.ToLower())  $($f.Name)"
+          }
+          $lines | Out-File dist\checksums.txt -Encoding ascii -NoNewline
+
+      - name: 创建 Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: pwsh
+        run: |
+          $ver = "$env:GITHUB_REF_NAME" -replace '^v', ''
+          $pre = @()
+          if ("$env:GITHUB_REF_NAME" -like '*-*') { $pre = @('--prerelease') }
+
+          $notes = @(
+            "下载对应架构的 PandaPortManager-win-*-$ver.zip，解压后直接得到 PandaPortManager.exe 即可运行（需 .NET 10 Desktop Runtime）；首次运行会弹出 UAC 提权确认。checksums.txt 为 SHA256 校验和。"
+            ''
+            '- win-x64：64 位 Intel/AMD（最常见）'
+            '- win-x86：32 位 x86'
+            '- win-arm64：ARM64（如骁龙笔记本）'
+          ) -join "`n"
+
+          gh release create "$env:GITHUB_REF_NAME" `
+            --title "$env:GITHUB_REF_NAME" `
+            --notes $notes `
+            --generate-notes `
+            @pre `
+            dist/PandaPortManager-win-x64-$ver.zip dist/PandaPortManager-win-x86-$ver.zip dist/PandaPortManager-win-arm64-$ver.zip dist/checksums.txt

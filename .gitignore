@@ -1,0 +1,28 @@
+# .NET build artifacts
+bin/
+obj/
+*.user
+
+# Published / packaged output
+dist/
+publish/
+
+# Editor / OS
+.vs/
+.idea/
+*.suo
+Thumbs.db
+Desktop.ini
+
+# Local tool caches (CodeBuddy / NuGet scratch)
+.np2/
+.nuget-packages/
+.workbuddy/
+.codebuddy/
+
+# Screenshot capture temp (not part of the project)
+/capture/
+
+# Built test binaries under tools/ (DPI test helper scratch, not project output)
+tools/dpitest/PandaPortManager.exe
+tools/dpitest/PandaPortManager.pdb
