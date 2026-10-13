@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Panda Port Manager">
+  <defs>
+    <linearGradient id="ppm-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16406E"/>
+      <stop offset="1" stop-color="#0C7C7B"/>
+    </linearGradient>
+    <radialGradient id="ppm-led" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0" stop-color="#B4FFD8"/>
+      <stop offset="0.45" stop-color="#2EE88F"/>
+      <stop offset="1" stop-color="#12B96E"/>
+    </radialGradient>
+    <filter id="ppm-glow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景：深蓝 -> 青绿渐变圆角方板 -->
+  <rect width="512" height="512" rx="112" fill="url(#ppm-bg)"/>
+
+  <!-- 信号波纹 -->
+  <g fill="none" stroke="#8FE8D8" stroke-linecap="round">
+    <path d="M 470.7 346 A 84 84 0 0 1 440 460.7" stroke-width="9" opacity="0.45"/>
+    <path d="M 491.5 334 A 108 108 0 0 1 452 481.5" stroke-width="9" opacity="0.22"/>
+  </g>
+
+  <!-- 双耳：RJ45 网络端口插孔 -->
+  <g>
+    <rect x="116" y="130" width="64" height="76" rx="14" fill="#14141F"/>
+    <rect x="133" y="148" width="30" height="40" rx="7" fill="#2B2B3D"/>
+    <rect x="140" y="155" width="16" height="6" rx="3" fill="#E8B84B"/>
+    <rect x="332" y="130" width="64" height="76" rx="14" fill="#14141F"/>
+    <rect x="349" y="148" width="30" height="40" rx="7" fill="#2B2B3D"/>
+    <rect x="356" y="155" width="16" height="6" rx="3" fill="#E8B84B"/>
+  </g>
+
+  <!-- 脸 -->
+  <ellipse cx="256" cy="312" rx="128" ry="112" fill="#FFFFFF"/>
+
+  <!-- 左眼 -->
+  <circle cx="208" cy="296" r="17" fill="#14141F"/>
+  <!-- 右眼：LED 状态灯 -->
+  <circle cx="304" cy="296" r="15" fill="url(#ppm-led)" filter="url(#ppm-glow)"/>
+
+  <!-- 鼻子 -->
+  <ellipse cx="256" cy="338" rx="15" ry="10" fill="#14141F"/>
+  <!-- 嘴 -->
+  <path d="M 256 348 L 256 360" stroke="#14141F" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 256 360 Q 240 376 222 366" fill="none" stroke="#14141F" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 256 360 Q 272 376 290 366" fill="none" stroke="#14141F" stroke-width="7" stroke-linecap="round"/>
+</svg>

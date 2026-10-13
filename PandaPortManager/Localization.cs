@@ -17,7 +17,7 @@ internal static class R
 
     private static readonly Dictionary<string, (string zh, string tw, string en)> _map = new()
     {
-        ["AppTitle"] = ("Panda Port Manager", "Panda Port Manager", "Panda Port Manager"),
+        ["AppTitle"] = ("熊猫端口管理器", "熊貓連接埠管理器", "Panda Port Manager"),
         ["Filter"] = ("筛选:", "篩選:", "Filter:"),
         ["FilterPlaceholder"] = ("端口 / 进程名 / IP / 状态", "連接埠 / 處理程序 / IP / 狀態", "Port / Process / IP / Status"),
         ["Refresh"] = ("刷新", "重新整理", "Refresh"),
