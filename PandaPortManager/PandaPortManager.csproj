@@ -8,10 +8,11 @@
     <Nullable>enable</Nullable>
     <AssemblyName>PandaPortManager</AssemblyName>
     <RootNamespace>PandaPortManager</RootNamespace>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <AssemblyTitle>Panda Port Manager</AssemblyTitle>
     <AssemblyProduct>Panda Port Manager</AssemblyProduct>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>..\images\logo.ico</ApplicationIcon>
     <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
 
     <!-- 单文件发布 -->
@@ -20,5 +21,12 @@
     <SelfContained>false</SelfContained>
     <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
   </PropertyGroup>
+
+  <ItemGroup>
+    <!-- 窗口图标嵌入为托管资源：ApplicationIcon 只覆盖 exe 资源，标题栏小图标需显式加载 -->
+    <EmbeddedResource Include="..\images\logo.ico">
+      <LogicalName>PandaPortManager.logo.ico</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
 
 </Project>

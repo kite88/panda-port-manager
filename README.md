@@ -1,6 +1,10 @@
 简体中文 | [English](README.en.md)
 
-# Panda Port Manager · Windows 端口占用管理工具
+<p align="center">
+  <img src="images/logo.png" alt="熊猫端口管理器" width="128">
+</p>
+
+# 熊猫端口管理器 · Windows 端口占用管理工具
 
 [![Release](https://img.shields.io/github/v/release/kite88/panda-port-manager?style=flat)](https://github.com/kite88/panda-port-manager/releases/latest)
 [![License](https://img.shields.io/github/license/kite88/panda-port-manager?cacheSeconds=600)](LICENSE)
