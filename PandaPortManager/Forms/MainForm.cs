@@ -50,6 +50,19 @@ public partial class MainForm : Form
 
     public MainForm()
     {
+        // 显式加载窗口图标：ApplicationIcon 只写入 exe 资源（影响资源管理器/任务栏），
+        // .NET 不会自动把它应用到窗体标题栏的小图标，需从嵌入资源显式加载。
+        try
+        {
+            using var s = typeof(MainForm).Assembly.GetManifestResourceStream("PandaPortManager.logo.ico");
+            if (s is not null)
+                Icon = new Icon(s, 16, 16);
+        }
+        catch
+        {
+            // 图标加载失败不影响程序功能
+        }
+
         Text = R.T("AppTitle");
         Size = new Size(1080, 640);
         MinimumSize = new Size(820, 480);
